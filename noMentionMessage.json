@@ -1,14 +1,18 @@
 {
     "ru":{
+        "$noMentionMessage":{
         "name": "$noMentionMessage[(1)]",
         "description": "Эта функция возвращает сообщение автора, удаляя любые упоминания",
         "example": "",
         "addition": "Обязательные аргументы - <>\n Необязательные аргументы - ()"
-         },
+        }
+    },
     "en":{
+        "$noMentionMessage":{
         "name": "$noMentionMessage[(1)]",
         "description": "This function returns the author's message while removing any mentions",
         "example": "",
         "addition": "Required Arguments - <>\n Optional Arguments - ()"
          }
+    }
 }
