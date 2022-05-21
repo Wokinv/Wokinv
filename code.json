@@ -1,38 +1,6 @@
 {
 "profile":{
     "name": "profile",
-    "code": "$if[$isNumber[$message[1]]==true]
-    $title[1;👤Профиль👤  \`$username[$message[1]]\`]
-    $thumbnail[1;$userAvatar[$message[1]]]
-    $description[1;
-    
-    **<:moneybag:967416080370925628> Денег:** \`$sum[$getUserVar[money;$message[1]];$getUserVar[bank;$message[1]]]\`
-    
-    **<:nerd:967416093968830484> Очков навыка:** \`$getUserVar[points;$message[1]]\`
-    
-    **<:canoe:967416104710451200> Транспорт:** $replaceText[$replaceText[$getUserVar[lorry;$message[1]];1; \`Грузовик\`];0;]$replaceText[$replaceText[$getUserVar[boat;$message[1]];1; \`Лодка\`];0;]$replaceText[$replaceText[$getUserVar[minecart;$message[1]];1; \`Вагонетка\`];0;]
-    
-    **<:pick:967416117280796672> Инструменты:** $replaceText[$replaceText[$getUserVar[axe1;$message[1]];1; \`Топор 1 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe2;$message[1]];1; \`Топор 2 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe3;$message[1]];1; \`Топор 3 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe4;$message[1]];1; \`Топор 4 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe5;$message[1]];1; \`Топор 5 уровня\`];0;]  $replaceText[$replaceText[$getUserVar[rod1;$message[1]];1; \`Удочка 1 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod2;$message[1]];1; \`Удочка 2 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod3;$message[1]];1; \`Удочка 3 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod4;$message[1]];1; \`Удочка 4 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod5;$message[1]];1; \`Удочка 5 уровня\`];0;]  $replaceText[$replaceText[$getUserVar[pickaxe1;$message[1]];1; \`Кирка 1 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe2;$message[1]];1; \`Кирка 2 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe3;$message[1]];1; \`Кирка 3 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe4;$message[1]];1; \`Кирка 4 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe5;$message[1]];1; \`Кирка 5 уровня\`];0;]
-    ]
-    $color[1;ff8c04]
-    $addTimestamp[1]
-    $footer[1;$username;$authorAvatar]
-    $else
-    $title[1;👤Профиль👤  \`$username[$mentioned[1;yes]]\`]
-    $thumbnail[1;$userAvatar[$mentioned[1;yes]]]
-    $description[1;
-      
-    **<:moneybag:967416080370925628> Денег:** \`$sum[$getUserVar[money;$mentioned[1;yes]];$getUserVar[bank;$mentioned[1;yes]]]\`
-    
-    **<:nerd:967416093968830484> Очков навыка:** \`$getUserVar[points;$mentioned[1;yes]]\`
-    
-    **<:canoe:967416104710451200> Транспорт:** $replaceText[$replaceText[$getUserVar[lorry;$mentioned[1;yes]];1; \`Грузовик\`];0;]$replaceText[$replaceText[$getUserVar[boat;$mentioned[1;yes]];1; \`Лодка\`];0;]$replaceText[$replaceText[$getUserVar[minecart;$mentioned[1;yes]];1; \`Вагонетка\`];0;]
-    
-    **<:pick:967416117280796672> Инструменты:** $replaceText[$replaceText[$getUserVar[axe1;$mentioned[1;yes]];1; \`Топор 1 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe2;$mentioned[1;yes]];1; \`Топор 2 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe3;$mentioned[1;yes]];1; \`Топор 3 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe4;$mentioned[1;yes]];1; \`Топор 4 уровня\`];0;]$replaceText[$replaceText[$getUserVar[axe5;$mentioned[1;yes]];1; \`Топор 5 уровня\`];0;]  $replaceText[$replaceText[$getUserVar[rod1;$mentioned[1;yes]];1; \`Удочка 1 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod2;$mentioned[1;yes]];1; \`Удочка 2 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod3;$mentioned[1;yes]];1; \`Удочка 3 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod4;$mentioned[1;yes]];1; \`Удочка 4 уровня\`];0;]$replaceText[$replaceText[$getUserVar[rod5;$mentioned[1;yes]];1; \`Удочка 5 уровня\`];0;]  $replaceText[$replaceText[$getUserVar[pickaxe1;$mentioned[1;yes]];1; \`Кирка 1 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe2;$mentioned[1;yes]];1; \`Кирка 2 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe3;$mentioned[1;yes]];1; \`Кирка 3 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe4;$mentioned[1;yes]];1; \`Кирка 4 уровня\`];0;]$replaceText[$replaceText[$getUserVar[pickaxe5;$mentioned[1;yes]];1; \`Кирка 5 уровня\`];0;]
-    ]
-    $color[1;ff8c04]
-    $addTimestamp[1]
-    $footer[1;$username;$authorAvatar]
-    $endif"
+    "code": "$title[1;👤Профиль👤  `$username[$message[1]]`]"
 }
 }
