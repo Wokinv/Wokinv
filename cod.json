@@ -1,6 +1,0 @@
-{
-"profile":{
-    "name": "profile",
-    "code": "$title[1;👤Профиль👤  `$username[$message[1]]`]"
-}
-}
